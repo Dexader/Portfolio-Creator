@@ -23,4 +23,46 @@
 					font-size: 12px;
 					margin-top: 4px;
 				}
+
+	.preview__body {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.preview__content {
+		text-align: center;
+		width: 100%;
+	}
+
+	.preview__main-title {
+		font-size: 42px;
+		width: 100%;
+	}
+
+	.preview__text {
+		width: 100%;
+	}
+
+	.preview__buttons {
+		flex-wrap: wrap;
+	}
+
+		.preview__buttons span {
+			font-size: 18px;
+		}
+
+	.button {
+		width: 100%;
+	}
+
+	.preview__media {
+		width: 100%;
+	}
+
+	.preview__image {
+		position: static;
+		top: 0;
+		left: 0;
+		transform: translate(0px, 0px);
+	}
 }

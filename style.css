@@ -111,9 +111,24 @@ h6 {
 	padding: 0 0.9375rem;
 }
 
+.intro-text {
+	font-size: 22px;
+	color: var(--second-font-color);
+}
+
+.button {
+	padding: 20px 30px;
+	background-color: var(--font-color);
+	font-size: calc(18vw * var(--vw));
+	line-height: 1;
+	color: #fff;
+}
+
 /*Header*/
 
-.header {}
+.header {
+	margin-bottom: 25px;
+}
 
 .header__body {
 	display: flex;
@@ -126,10 +141,6 @@ h6 {
 	width: clamp(163px, 203vw * var(--vw), 293px);
 	height: clamp(28px, 28vw * var(--vw), 42px);
 }
-
-.header__menu {}
-
-.menu {}
 
 .menu__list {
 	display: flex;
@@ -144,14 +155,14 @@ h6 {
 	flex-direction: row-reverse;
 }
 
+.menu__link:last-child span {
+	font-family: Roboto;
+}
+
 .menu__link:last-child::before {
 	display: block;
 	font-size: 12px;
 }
-
-.menu__link {}
-
-.header__burger {}
 
 .burger {
 	display: none;
@@ -219,4 +230,73 @@ h6 {
 .burger__button.active span:nth-of-type(3) {
 	top: 50%;
 	transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+/*Preview*/
+
+.preview {
+	margin-bottom: 20px;
+}
+
+.preview__body {
+	display: grid;
+	grid-template-columns: 1fr calc(500vw * var(--vw));
+}
+
+.preview__content {
+	padding-block: clamp(20px, 92vw * var(--vw), 102px) clamp(20px, 100vw * var(--vw), 110px);
+}
+
+.preview__main-title {
+	width: calc(594vw * var(--vw));
+	font-weight: 700;
+	font-size: calc(72vw * var(--vw));
+	line-height: 1.388;
+	letter-spacing: 2px;
+	margin-bottom: 34px;
+}
+
+.preview__main-title span {
+	color: var(--orange-color);
+}
+
+.preview__text {
+	width: calc(547vw * var(--vw));
+	margin-bottom: 38px;
+}
+
+.preview__buttons {
+	display: flex;
+	gap: 10px;
+}
+
+.button_download {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+	background-color: #fff;
+	color: var(--font-color);
+}
+
+.button_download span {
+	font-family: Roboto;
+}
+
+.button_download::before {
+	display: block;
+	font-size: 12px;
+}
+
+.preview__media {
+	position: relative;
+}
+
+.preview__image {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
 }
