@@ -300,3 +300,30 @@ h6 {
 	transform: translate(-50%, -50%);
 	object-fit: cover;
 }
+
+/*Partners*/
+
+.partners {
+	margin-inline: calc(289vw * var(--vw));
+	margin-bottom: clamp(20px, 80vw * var(--vw), 100px);
+	padding-block: clamp(35px, 77vw * var(--vw), 107px);
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+}
+
+.partners__text {
+	font-size: clamp(14px, 18vw * var(--vw), 22px);
+	line-height: 1;
+	margin-bottom: 45px;
+}
+
+.partners__logos {
+	display: flex;
+	gap: clamp(20px, 100vw * var(--vw), 125px);
+}
+
+.partners__logo {
+	width: clamp(80px, 141vw * var(--vw), 181px);
+}

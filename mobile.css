@@ -65,4 +65,23 @@
 		left: 0;
 		transform: translate(0px, 0px);
 	}
+
+	.partners {
+		margin-inline: 25px;
+	}
+
+	.partners__logos {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.partners__logo {
+		width: 45%;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.partners__logo {
+		width: 80%;
+	}
 }
