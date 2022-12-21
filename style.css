@@ -105,7 +105,7 @@ h6 {
 }
 
 [class*=__container] {
-	max-width: 88.888888vw;
+	max-width: 84.375vw;
 	box-sizing: content-box;
 	margin: 0 auto;
 	padding: 0 0.9375rem;
@@ -122,6 +122,22 @@ h6 {
 	font-size: calc(18vw * var(--vw));
 	line-height: 1;
 	color: #fff;
+}
+
+.subtitle {
+	font-weight: 700;
+	font-size: clamp(18px, 22vw * var(--vw), 28px);
+	letter-spacing: 4px;
+	color: var(--orange-color);
+	text-transform: uppercase;
+	line-height: 1;
+}
+
+.title {
+	font-weight: 700;
+	font-size: clamp(36px, 54vw * var(--vw), 60px);
+	line-height: 1.0925;
+	letter-spacing: 1px;
 }
 
 /*Header*/
@@ -306,7 +322,7 @@ h6 {
 .partners {
 	margin-inline: calc(289vw * var(--vw));
 	margin-bottom: clamp(20px, 80vw * var(--vw), 100px);
-	padding-block: clamp(35px, 77vw * var(--vw), 107px);
+	padding-block: clamp(20px, 77vw * var(--vw), 107px);
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -326,4 +342,72 @@ h6 {
 
 .partners__logo {
 	width: clamp(80px, 141vw * var(--vw), 181px);
+}
+
+/*Services*/
+
+.services__body {
+	margin: 0 auto;
+	width: calc(1098vw * var(--vw));
+	padding-block: clamp(20px, 80vw * var(--vw), 100px);
+}
+
+.services__header {
+	margin: 0 auto;
+	width: calc(810vw * var(--vw));
+	text-align: center;
+	margin-bottom: clamp(20px, 114.73vw * var(--vw), 135px);
+}
+
+.services__subtitle {
+	margin-bottom: clamp(8px, 16vw * var(--vw), 20px);
+}
+
+.services__cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: clamp(5px, 90vw * var(--vw), 110px);
+}
+
+.card__icon {
+	margin-bottom: max(calc(39vw * var(--vw)), 15px)
+}
+
+.card__icon img {
+	width: 22.87581699%;
+}
+
+.card__question {
+	font-weight: 700;
+	font-size: clamp(20px, 24vw * var(--vw), 28px);
+	line-height: 1.0833;
+	margin-bottom: 25px;
+}
+
+.card__text {
+	color: var(--second-font-color);
+	margin-bottom: 23.73px;
+}
+
+.card__list {
+	font-weight: 700;
+	font-size: clamp(14px, 16vw * var(--vw), 22px);
+}
+
+.card__item {
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+}
+
+.card__item:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.card__item::before {
+	content: '';
+	width: clamp(4px, 7vw * var(--vw), 10px);
+	height: clamp(4px, 7vw * var(--vw), 10px);
+	display: block;
+	background-color: var(--font-color);
 }

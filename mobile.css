@@ -78,10 +78,30 @@
 	.partners__logo {
 		width: 45%;
 	}
+
+	.services__cards {
+		grid-template-columns: 1fr;
+	}
+
+	.card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.card__icon img {
+		width: 50%;
+	}
 }
 
 @media screen and (max-width: 425px) {
 	.partners__logo {
-		width: 80%;
+		width: 60%;
 	}
+
+		.title {
+			font-size: 28px;
+		}
 }
