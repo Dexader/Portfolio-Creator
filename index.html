@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="mobile.css">
 	<link rel="stylesheet" href="iconsfont/iconfont.css">
-	<title>Portfolio Creator</title>
+	<link rel="stylesheet" href="swiper-bundle.css">
 </head>
+
 <body class="body">
-	
+
 	<div class="wrapper">
 
 		<header class="header">
@@ -27,7 +29,8 @@
 							<li class="menu__item"><a href="#" class="menu__link">Services</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Projects</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
-							<li class="menu__item"><a href="#" class="menu__link --icon-arrow"><span>Book a call</span></a></li>
+							<li class="menu__item"><a href="#" class="menu__link --icon-arrow"><span>Book a
+										call</span></a></li>
 						</ul>
 					</nav>
 					<nav class="header__burger burger">
@@ -55,13 +58,16 @@
 				<div class="preview__container">
 					<div class="preview__body">
 						<div class="preview__content">
-							<h1 class="preview__main-title"><span>I design products</span> that delight and inspire people.</h1>
+							<h1 class="preview__main-title"><span>I design products</span> that delight and inspire
+								people.</h1>
 							<p class="preview__text intro-text">
-								Hi! I’m Jake, a product designer based in Berlin. I create user-friendly interfaces for fast-growing startups.
+								Hi! I’m Jake, a product designer based in Berlin. I create user-friendly interfaces for
+								fast-growing startups.
 							</p>
 							<div class="preview__buttons">
 								<button class="preview__button button"><span>Book a call</span></button>
-								<a href="#" class="preview__download button button_download --icon-arrow" download="#"><span>Download CV</span></a>
+								<a href="#" class="preview__download button button_download --icon-arrow"
+									download="#"><span>Download CV</span></a>
 							</div>
 						</div>
 						<div class="preview__media">
@@ -82,48 +88,139 @@
 			<section class="home__services services">
 				<div class="services__container">
 					<div class="services__body">
-							<div class="services__header">
-								<div class="services__subtitle subtitle">Services</div>
-								<h2 class="services__title title">Design that solves problems, one product at a time.</h2>
+						<div class="services__header">
+							<div class="services__subtitle subtitle">Services</div>
+							<h2 class="services__title title">Design that solves problems, one product at a time.</h2>
+						</div>
+						<div class="services__cards">
+							<div class="services__card card">
+								<div class="card__icon">
+									<img src="img/services/shape1.svg" alt="Some shape">
+								</div>
+								<div class="card__question">What I can do for you</div>
+								<div class="card__text">Faster, better products that your users love. Here's all the
+									services I provide:</div>
+								<ul class="card__list">
+									<li class="card__item">Design Strategy</li>
+									<li class="card__item">Web and Mobile App Design</li>
+									<li class="card__item">Front-end Development</li>
+								</ul>
 							</div>
-							<div class="services__cards">
-								<div class="services__card card">
-									<div class="card__icon">
-										<img src="img/services/shape1.svg" alt="Some shape">
-									</div>
-									<div class="card__question">What I can do for you</div>
-									<div class="card__text">Faster, better products that your users love. Here's all the services I provide:</div>
-									<ul class="card__list">
-										<li class="card__item">Design Strategy</li>
-										<li class="card__item">Web and Mobile App Design</li>
-										<li class="card__item">Front-end Development</li>
-									</ul>
+							<div class="services__card card">
+								<div class="card__icon">
+									<img src="img/services/shape2.svg" alt="Some shape">
 								</div>
-								<div class="services__card card">
-									<div class="card__icon">
-										<img src="img/services/shape2.svg" alt="Some shape">
-									</div>
-									<div class="card__question">Applications I'm fluent in</div>
-									<div class="card__text">Every designer needs the right tools to do the perfect job. Thankfully, I'm multilingual.</div>
-									<ul class="card__list">
-										<li class="card__item">Sketch</li>
-										<li class="card__item">Webflow</li>
-										<li class="card__item">Figma</li>
-									</ul>
+								<div class="card__question">Applications I'm fluent in</div>
+								<div class="card__text">Every designer needs the right tools to do the perfect job.
+									Thankfully, I'm multilingual.</div>
+								<ul class="card__list">
+									<li class="card__item">Sketch</li>
+									<li class="card__item">Webflow</li>
+									<li class="card__item">Figma</li>
+								</ul>
+							</div>
+							<div class="services__card card">
+								<div class="card__icon">
+									<img src="img/services/shape3.svg" alt="Some shape">
 								</div>
-								<div class="services__card card">
-									<div class="card__icon">
-										<img src="img/services/shape3.svg" alt="Some shape">
+								<div class="card__question">What you can expect</div>
+								<div class="card__text">I design products that are more than pretty. I make them
+									shippable and usable.</div>
+								<ul class="card__list">
+									<li class="card__item">Clean and functional</li>
+									<li class="card__item">Device and user friendly</li>
+									<li class="card__item">Efficient and maintainable</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="home__projects projects">
+				<div class="projects__container">
+					<div class="projects__body">
+						<div class="projects__header">
+							<div class="projects__titles">
+								<div class="projects__subtittle subtitle">PROJECTS</div>
+								<h2 class="projects__title title">
+									<p>I bring results.</p>
+									<p>My clients are proof.</p>
+								</h2>
+							</div>
+							<button class="projects__button button"><span>View all projects</span></button>
+						</div>
+						<div class="projects__slider swiper">
+							<div class="slider__body swiper-wrapper">
+								<div class="slider__slide swiper-slide">
+									<div class="slide__pic"><img src="img/projects/pic1.png" alt="Abstraction"></div>
+									<div class="slide__content">
+										<div class="slide__category">Branding</div>
+										<div class="slide__name">Soulful Rebrand</div>
+										<a href="" class="slide__full --icon-arrow"><span>View Project</span></a>
 									</div>
-									<div class="card__question">What you can expect</div>
-									<div class="card__text">I design products that are more than pretty. I make them shippable and usable.</div>
-									<ul class="card__list">
-										<li class="card__item">Clean and functional</li>
-										<li class="card__item">Device and user friendly</li>
-										<li class="card__item">Efficient and maintainable</li>
-									</ul>
+								</div>
+								<div class="slider__slide swiper-slide">
+									<div class="slide__pic"><img src="img/projects/pic2.png" alt="Abstraction"></div>
+									<div class="slide__content">
+										<div class="slide__category">Product Design</div>
+										<div class="slide__name">Datadash Product design</div>
+										<a href="" class="slide__full --icon-arrow"><span>View Project</span></a>
+									</div>
+								</div>
+								<div class="slider__slide swiper-slide">
+									<div class="slide__pic"><img src="img/projects/pic3.png" alt="Abstraction"></div>
+									<div class="slide__content">
+										<div class="slide__category">Web Design</div>
+										<div class="slide__name">Maize Website Design</div>
+										<a href="" class="slide__full --icon-arrow"><span>View Project</span></a>
+									</div>
+								</div>
+								<div class="slider__slide swiper-slide">
+									<div class="slide__pic"><img src="img/projects/pic1.png" alt="Abstraction"></div>
+									<div class="slide__content">
+										<div class="slide__category">Branding</div>
+										<div class="slide__name">Soulful Rebrand</div>
+										<a href="" class="slide__full --icon-arrow"><span>View Project</span></a>
+									</div>
+								</div>
+								<div class="slider__slide swiper-slide">
+									<div class="slide__pic"><img src="img/projects/pic2.png" alt="Abstraction"></div>
+									<div class="slide__content">
+										<div class="slide__category">Product Design</div>
+										<div class="slide__name">Datadash Product design</div>
+										<a href="" class="slide__full --icon-arrow"><span>View Project</span></a>
+									</div>
+								</div>
+								<div class="slider__slide swiper-slide">
+									<div class="slide__pic"><img src="img/projects/pic3.png" alt="Abstraction"></div>
+									<div class="slide__content">
+										<div class="slide__category">Web Design</div>
+										<div class="slide__name">Maize Website Design</div>
+										<a href="" class="slide__full --icon-arrow"><span>View Project</span></a>
+									</div>
+								</div>
+								<div class="slider__slide swiper-slide">
+									<div class="slide__pic"><img src="img/projects/pic1.png" alt="Abstraction"></div>
+									<div class="slide__content">
+										<div class="slide__category">Branding</div>
+										<div class="slide__name">Soulful Rebrand</div>
+										<a href="" class="slide__full --icon-arrow"><span>View Project</span></a>
+									</div>
+								</div>
+								<div class="slider__slide swiper-slide">
+									<div class="slide__pic"><img src="img/projects/pic2.png" alt="Abstraction"></div>
+									<div class="slide__content">
+										<div class="slide__category">Product Design</div>
+										<div class="slide__name">Datadash Product design</div>
+										<a href="" class="slide__full --icon-arrow"><span>View Project</span></a>
+									</div>
 								</div>
 							</div>
+							<div class="slider__arrows">
+								<div class="slider__arrow-prev swiper-button-prev --icon-slider-arrow"></div>
+								<div class="slider__arrow-next swiper-button-next --icon-slider-arrow"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -144,7 +241,10 @@
 
 	</svg>
 
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script src="script.js"></script>
-	
+
+
 </body>
+
 </html>

@@ -94,6 +94,19 @@
 	.card__icon img {
 		width: 50%;
 	}
+
+	.projects__header {
+		flex-direction: column;
+		gap: 25px;
+	}
+
+	.projects__button span {
+		font-size: 18px;
+	}
+
+	.slider__arrows {
+		left: 90%;
+	}
 }
 
 @media screen and (max-width: 425px) {
@@ -104,4 +117,14 @@
 		.title {
 			font-size: 28px;
 		}
+
+		.slider__arrows {
+			left: 85%;
+		}
+}
+
+@media screen and (max-width: 420px) {
+	.slide__name {
+		font-size: 20px;
+	}
 }
