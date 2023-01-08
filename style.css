@@ -594,3 +594,34 @@ h6 {
 .articles__details::before {
 	font-size: 13px;
 }
+
+/*Designer*/
+
+.designer {
+	padding-block: 76px 80px;
+}
+
+.designer__header {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	margin-bottom: calc(115vw * var(--vw));
+}
+
+.designer__subtitle {margin-bottom: 15px;}
+
+.designer__text {
+	width: clamp(320px, 625vw * var(--vw), 685px);
+	margin-top: 9px;
+}
+
+.designer__media {
+	display: flex;
+	gap:calc(16vw * var(--vw));
+}
+
+.designer__col > .designer__photo:not(:last-child) {
+	margin-bottom: calc(16vw * var(--vw));
+}
+
+.designer__photo {}

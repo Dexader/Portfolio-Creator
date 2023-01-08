@@ -116,6 +116,33 @@
 	.articles__title {
 		width: 100%;
 	}
+
+	.designer {
+		padding-block: 25px;
+	}
+
+	.designer__header {
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+	}
+
+	.designer__titles {
+		text-align: center;
+	}
+
+	.designer__text {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.designer__media {
+		flex-direction: column;
+	}
+
+	.designer img {
+		max-height: 305px;
+	}
 }
 
 @media screen and (max-width: 425px) {
