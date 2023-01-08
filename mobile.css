@@ -107,6 +107,15 @@
 	.slider__arrows {
 		left: 90%;
 	}
+
+	.blogs__body {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.articles__title {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 425px) {
