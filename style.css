@@ -618,10 +618,75 @@ h6 {
 .designer__media {
 	display: flex;
 	gap:calc(16vw * var(--vw));
+	align-items: center;
+	justify-content: center;
 }
 
 .designer__col > .designer__photo:not(:last-child) {
 	margin-bottom: calc(16vw * var(--vw));
 }
 
-.designer__photo {}
+/*Career*/
+
+.career {
+	padding-block: clamp(30px, 74vw * var(--vw), 94px) clamp(30px, 83vw * var(--vw), 94px);
+}
+
+.career__body {
+	display: flex;
+	gap: max(49px, 9px);
+}
+
+.career__col {
+	width: 50%;
+}
+
+.career__title {
+	font-size: clamp(28px, 36vw * var(--vw), 36px);
+	line-height: 1;
+	margin-bottom: clamp(35px, 86vw * var(--vw), 106px);
+}
+
+.career__item {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+	padding-right: clamp(20px, 60vw * var(--vw), 65px);
+	border-bottom: 1px solid #E5E5E5;
+	margin-bottom: 32px;
+}
+
+.career__item::before {
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	transform: rotate(-45deg);
+}
+
+.career__block {
+	display: flex;
+}
+
+.career__icon {
+	margin-right: 20px;
+}
+
+.career__text {
+	font-family: Roboto;
+}
+
+.career__name {
+	font-family: Roboto;
+	font-size: clamp(18px, 24vw * var(--vw), 28px);
+	font-weight: 700;
+	line-height: 1.0833;
+	margin-bottom: 9px;
+}
+
+.career__details, .career__date {
+	font-family: Roboto;
+	line-height: 1.3125;
+	color: rgba(0, 0, 0, 0.6);
+	margin-bottom: 39px;
+}

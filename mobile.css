@@ -1,3 +1,11 @@
+@media screen and (max-width: 990.98px) {
+	
+	.career__item {
+			padding-right: 0;
+		}
+
+}
+
 @media screen and (max-width: 767.98px) {
 	.menu {
 		display: none;
@@ -143,6 +151,23 @@
 	.designer img {
 		max-height: 305px;
 	}
+
+		.designer__photo {
+			width: 100%;
+		}
+
+		.designer__col {
+			width: 100%;
+		}
+
+	.career__body {
+		flex-wrap: wrap;
+	}
+
+	.career__col {
+		width: 100%;
+	}
+
 }
 
 @media screen and (max-width: 425px) {
@@ -157,10 +182,19 @@
 		.slider__arrows {
 			left: 85%;
 		}
+
+	.career__item {
+		flex-direction: column;
+		align-items: start;
+	}
 }
 
 @media screen and (max-width: 420px) {
 	.slide__name {
 		font-size: 20px;
 	}
+
+		.designer__photo {
+			width: 100%;
+		}
 }

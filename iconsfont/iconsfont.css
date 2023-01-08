@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'iconsfont';
-  src:  url('fonts/iconsfont.eot?85dmfu');
-  src:  url('fonts/iconsfont.eot?85dmfu#iefix') format('embedded-opentype'),
-    url('fonts/iconsfont.ttf?85dmfu') format('truetype'),
-    url('fonts/iconsfont.woff?85dmfu') format('woff'),
-    url('fonts/iconsfont.svg?85dmfu#iconsfont') format('svg');
+  src:  url('fonts/iconsfont.eot?1sntoe');
+  src:  url('fonts/iconsfont.eot?1sntoe#iefix') format('embedded-opentype'),
+    url('fonts/iconsfont.ttf?1sntoe') format('truetype'),
+    url('fonts/iconsfont.woff?1sntoe') format('woff'),
+    url('fonts/iconsfont.svg?1sntoe#iconsfont') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,7 +24,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .--icon-arrow:before {
   content: "\e900";
 }
