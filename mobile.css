@@ -1,12 +1,32 @@
-@media screen and (max-width: 990.98px) {
+@media screen and (max-width: 61.93625rem) {
 	
 	.career__item {
 			padding-right: 0;
 		}
 
+		.testimonials__slide {
+			flex-direction: column;
+		}
+
+		.testimonials__pic {
+			margin-right: 0;
+		}
+
+		.testimonials__pic img {
+			width: 100%;
+		}
+
+		.testimonials__content {
+			width: 100%;
+		}
+
+		.testimonials__arrows {
+			bottom: 0;
+		}
+
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 47.99875rem) {
 	.menu {
 		display: none;
 	}
@@ -17,19 +37,19 @@
 
 	.menu__list {
 		flex-direction: column;
-		font-size: 20px;
+		font-size: 1.25rem;
 	}
 
 		.menu__link:last-child {
 			display: flex;
 			flex-direction: row-reverse;
 			align-items: center;
-			gap: 12px;
+			gap: 0.75rem;
 		}
 
 				.menu__link:last-child::before {
-					font-size: 12px;
-					margin-top: 4px;
+					font-size: 0.75rem;
+					margin-top: 0.25rem;
 				}
 
 	.preview__body {
@@ -43,7 +63,7 @@
 	}
 
 	.preview__main-title {
-		font-size: 42px;
+		font-size: 2.63rem;
 		width: 100%;
 	}
 
@@ -56,7 +76,7 @@
 	}
 
 		.preview__buttons span {
-			font-size: 18px;
+			font-size: 1.13rem;
 		}
 
 	.button {
@@ -71,11 +91,11 @@
 		position: static;
 		top: 0;
 		left: 0;
-		transform: translate(0px, 0px);
+		transform: translate(0.00rem, 0.00rem);
 	}
 
 	.partners {
-		margin-inline: 25px;
+		margin-inline: 1.56rem;
 	}
 
 	.partners__logos {
@@ -105,11 +125,11 @@
 
 	.projects__header {
 		flex-direction: column;
-		gap: 25px;
+		gap: 1.56rem;
 	}
 
 	.projects__button span {
-		font-size: 18px;
+		font-size: 1.13rem;
 	}
 
 	.slider__arrows {
@@ -126,7 +146,7 @@
 	}
 
 	.designer {
-		padding-block: 25px;
+		padding-block: 1.56rem;
 	}
 
 	.designer__header {
@@ -149,7 +169,7 @@
 	}
 
 	.designer img {
-		max-height: 305px;
+		max-height: 19.06rem;
 	}
 
 		.designer__photo {
@@ -170,13 +190,13 @@
 
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 26.56rem) {
 	.partners__logo {
 		width: 60%;
 	}
 
 		.title {
-			font-size: 28px;
+			font-size: 1.75rem;
 		}
 
 		.slider__arrows {
@@ -189,9 +209,9 @@
 	}
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 26.25rem) {
 	.slide__name {
-		font-size: 20px;
+		font-size: 1.25rem;
 	}
 
 		.designer__photo {
