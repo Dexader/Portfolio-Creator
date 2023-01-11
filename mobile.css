@@ -188,6 +188,14 @@
 		width: 100%;
 	}
 
+	.faq__content {
+		flex-direction: column;
+	}
+
+	.faq__col {
+		width: 100%;
+	}
+
 }
 
 @media screen and (max-width: 26.56rem) {
