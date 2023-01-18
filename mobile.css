@@ -196,6 +196,19 @@
 		width: 100%;
 	}
 
+	.footer__content {
+		flex-wrap: wrap;
+	}
+
+	.footer__address {
+		width: 100%;
+		margin-bottom: 25px;
+	}
+
+	.footer__menu {
+		width: 100%;
+	}
+
 }
 
 @media screen and (max-width: 26.56rem) {

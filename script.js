@@ -3,11 +3,26 @@
 let menuBtn = document.querySelector('.burger__button');
 let menu = document.querySelector('.burger__body');
 let body = document.querySelector('.body');
+
 menuBtn.addEventListener('click', function () {
 	menuBtn.classList.toggle('active');
 	menu.classList.toggle('active');
 	body.classList.toggle('active');
 });
+
+let menuBurger = document.querySelector('.menu-burger');
+const links = Array.from(menuBurger.children);
+
+links.forEach((link) => {
+	link.addEventListener('click', closeOnClick);
+});
+
+function closeOnClick() {
+	menuBtn.classList.remove('active');
+	menu.classList.remove('active');
+	body.classList.remove('active');
+}
+
 
 //Slider
 
@@ -80,4 +95,34 @@ function showSlides(n) {
 		slide.style.display = 'none';
 	}
 	slides[slideIndex - 1].style.display = 'flex';
+}
+
+//Modal
+
+let modal = document.getElementById('modal');
+let modalBtn = document.getElementById('item-modal');
+let modalBtnM = document.getElementById('item-modal-m');
+let modalBtnP = document.getElementById('item-modal-p');
+let span = document.getElementsByClassName("close")[0];
+
+modalBtn.onclick = function() {
+	modal.style.display = 'block';
+}
+
+modalBtnM.onclick = function () {
+	modal.style.display = 'block';
+}
+
+modalBtnP.onclick = function () {
+	modal.style.display = 'block';
+}
+
+span.onclick = function() {
+	modal.style.display = 'none';
+}
+
+window.onclick = function(e) {
+	if (e.target == modal) {
+		modal.style.display = 'none';
+	}
 }
